@@ -1,8 +1,8 @@
  
   
-### Zhashut's GitHub Stats 👋
+### 我是炸薯条 👋
 
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=zhashut&show_icons=true&theme=gotham" alt="abhisheknaiidu" />  <img align="" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liyupi&hide_title=true&hide_border=true&layout=compact&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite&locale=cn" />
+<a align="center"> <img align="" height="173" src="https://github-readme-stats.vercel.app/api?username=zhashut&show_icons=true&theme=gotham" alt="abhisheknaiidu" />  <img align="" height="173" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liyupi&hide_title=true&hide_border=true&layout=compact&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite&locale=cn" />
 
 
   **languages and tools:**   
