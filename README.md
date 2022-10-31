@@ -2,7 +2,7 @@
   
 ### 我是炸薯条 👋
 
-<a align="center"> <img align="" height="160px" src="https://github-readme-stats.vercel.app/api?username=zhashut&show_icons=true&theme=gotham" alt="abhisheknaiidu" />  <img align="" height="160px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liyupi&hide_title=true&hide_border=true&layout=compact&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite&locale=cn" />
+<a align="center"> <img align="" height="160px" src="https://github-readme-stats.vercel.app/api?username=zhashut&show_icons=true&theme=gotham" alt="zhashut" />  <img align="" height="160px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zhashut&hide_title=true&hide_border=true&layout=compact&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite&locale=cn" />
 
 
   **languages and tools:**   
