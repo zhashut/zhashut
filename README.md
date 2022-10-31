@@ -1,8 +1,9 @@
-  <img align="right" alt="GIF" src="https://github.com/abhisheknaiidu/abhisheknaiidu/blob/master/code.gif?raw=true" width="450" height="260" />
+ 
   
 ### Zhashut's GitHub Stats 👋
 
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=zhashut&show_icons=true&theme=gotham" alt="abhisheknaiidu" />
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=zhashut&show_icons=true&theme=gotham" alt="abhisheknaiidu" />  <img align="" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liyupi&hide_title=true&hide_border=true&layout=compact&bg_color=0,73FA79,73FDFF,D783FF&theme=graywhite&locale=cn" />
+
 
   **languages and tools:**   
 
