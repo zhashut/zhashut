@@ -2,7 +2,6 @@
   
 ### 我是炸薯条 👋
 
-
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=zhashut&theme=github&count_private=true)
 
 <table>
@@ -29,8 +28,11 @@ protobuf   15 mins        ▏░░░░░░░░░░░░░░░░░
 </tr>
 </table>
 
-<code><img height="20" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3665/golang_logo_icon_171073.png"></code>
-<code><img height="20" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3665/192614bf747bd9081632368455.png"></code>
- <code><img height="18" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3665/swift.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
+**Languages**
+
+![Go](https://img.shields.io/badge/-Golang-blue?&logo=Go&logoColor=fff)
+![Java](https://img.shields.io/badge/-Java%20-orange)
+![MySQL](https://img.shields.io/badge/-MySQL-white?&logo=MySQL)
+![Git](https://img.shields.io/badge/-Git-lightgrey)
+![Markdown](https://img.shields.io/badge/-Markdown-black?&logo=Markdown)
+
