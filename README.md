@@ -6,24 +6,12 @@
 
 <table>
 <tr>
- <td valign="top" width="100%">
- <img align=""  src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=zhashut&theme=github" />
+ <td>
+ <img align="left" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=zhashut&theme=github" />
   </td>
   
- <td valign="top">
-
-<!-- waka-box start -->
-#### <a href="https://gist.github.com/zhashut/f52214715f6948c19aa9ebcc130616c8" target="_blank">📊 Weekly development breakdown</a>
-```text
-Go         21 hrs 19 mins █████████████▍░░░░░░░  63.8%
-Java       9 hrs 32 mins  █████▉░░░░░░░░░░░░░░░  28.5%
-YAML       38 mins        ▍░░░░░░░░░░░░░░░░░░░░   1.9%
-protobuf   30 mins        ▎░░░░░░░░░░░░░░░░░░░░   1.5%
-Protoco... 29 mins        ▎░░░░░░░░░░░░░░░░░░░░   1.5%
-```
-<!-- Powered by https://github.com/zhashut/waka-box . -->
-<!-- waka-box end -->
- 
+ <td>
+  <img align="right" height=200px width=320px src="https://github-readme-stats.vercel.app/api/top-langs/?username=zhashut&layout=compact&langs_count=8" />
  </td>
 </tr>
 </table>
