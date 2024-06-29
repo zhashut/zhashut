@@ -3,7 +3,7 @@ name: Update README with Word Count
 on:
   schedule:
     - cron: '0 0 * * *'  # 每天午夜运行
-  # 可以添加其他触发条件
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
   update-readme:
