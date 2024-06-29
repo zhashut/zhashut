@@ -15,27 +15,14 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'  # 设置Python版本
+        python-version: '3.12'  # 设置Python版本
 
     - name: Install dependencies
       run: pip install requests  # 安装requests库
 
     - name: Update README
       run: |
-        # 定义一个函数来更新README.md文件
-        update_readme = lambda wc: (
-            readme_content = open('README.md', 'r', encoding='utf-8').read(),
-            readme_content = readme_content.replace('wordCount', f'{wc}'),
-            open('README.md', 'w', encoding='utf-8').write(readme_content)
-        )
-
-        # 获取wordCount值
-        response = requests.get('https://www.yuque.com/api/books/24381935/overview', cookies={'cookie': os.environ.COOKIE})
-        if response.status_code == 200:
-            word_count = response.json()['data']['wordCount']
-            update_readme(word_count)
-        else:
-            print(f'Failed to fetch data: {response.status_code}')
+        python -c "import os; import requests; import json; response = requests.get('https://www.yuque.com/api/books/24381935/overview', cookies={'cookie': os.environ['COOKIE']}); if response.status_code == 200: data = response.json(); readme_content = open('README.md', 'r', encoding='utf-8').read(); updated_content = readme_content.replace('wordCount', str(data['data']['wordCount'])); open('README.md', 'w', encoding='utf-8').write(updated_content);"
 
     - name: Commit and push changes
       run: |
