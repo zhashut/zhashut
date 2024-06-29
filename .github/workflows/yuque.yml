@@ -1,0 +1,47 @@
+name: Update README with Word Count
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天午夜运行
+  # 可以添加其他触发条件
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # 设置Python版本
+
+    - name: Install dependencies
+      run: pip install requests  # 安装requests库
+
+    - name: Update README
+      run: |
+        # 定义一个函数来更新README.md文件
+        update_readme = lambda wc: (
+            readme_content = open('README.md', 'r', encoding='utf-8').read(),
+            readme_content = readme_content.replace('wordCount', f'{wc}'),
+            open('README.md', 'w', encoding='utf-8').write(readme_content)
+        )
+
+        # 获取wordCount值
+        response = requests.get('https://www.yuque.com/api/books/24381935/overview', cookies={'cookie': os.environ.COOKIE})
+        if response.status_code == 200:
+            word_count = response.json()['data']['wordCount']
+            update_readme(word_count)
+        else:
+            print(f'Failed to fetch data: {response.status_code}')
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -am "Update README with new word count"  # 提交更改
+        git push  # 推送到GitHub
+      env:
+        COOKIE: ${{ secrets.YUQUE_COOKIE }}  # 从secrets中获取cookie
