@@ -24,3 +24,7 @@
 ![Git](https://img.shields.io/badge/-Git-lightgrey)
 ![Markdown](https://img.shields.io/badge/-Markdown-black?&logo=Markdown)
 
+<p>
+  <img src="https://mdn.alipayobjects.com/huamei_0prmtq/afts/img/A*sHlLTI41kIoAAAAAAAAAAAAADvuFAQ/original" style="width: 35px; height: auto; margin-right: 20px;">
+  <span style="font-size:16px;">个人语雀文档输出总字数：<strong>wordCount</strong></span>
+</p>
