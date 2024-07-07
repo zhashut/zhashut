@@ -24,13 +24,19 @@ def update_readme(word_count):
     if not readme_path.is_file():
         raise Exception("README.md not found in the current directory.")
 
-    # 读取并更新README.md内容
+    # 读取README.md内容
     with open(readme_path, 'r', encoding='utf-8') as file:
         content = file.read()
 
-    # 假设wordCount是直接文本，替换它
-    updated_content = content.replace('wordCount', str(word_count))
+    # 正则表达式匹配 <strong> 标签内的内容
+    # 假设标签格式为 <strong>数字</strong>
+    pattern = re.compile(r'<strong>(\d+)</strong>')
 
+    # 使用正则表达式替换标签内的内容
+    # 将匹配到的数字替换为新的字数
+    updated_content = pattern.sub(r'<strong>' + str(word_count) + '</strong>', content)
+
+    # 写回更新后的内容到README.md
     with open(readme_path, 'w', encoding='utf-8') as file:
         file.write(updated_content)
 
