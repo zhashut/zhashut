@@ -15,30 +15,22 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.12'  # 设置Python版本
+        python-version: '3.x'  # 根据需要设置Python版本
 
     - name: Install dependencies
-      run: pip install requests  # 安装requests库
-
-    - name: Update README
       run: |
-        python -c "
-          import os; import requests; import json;
-          response = requests.get('https://www.yuque.com/api/books/24381935/overview', cookies={'cookie': os.environ['COOKIE']});
-          if response.status_code == 200:
-              data = response.json();
-              with open('README.md', 'r', encoding='utf-8') as file:
-                  readme_content = file.read();
-              updated_content = readme_content.replace('wordCount', str(data['data']['wordCount']));
-              with open('README.md', 'w', encoding='utf-8') as file:
-                  file.write(updated_content);
-        "
+        pip install requests  # 安装requests库
+
+    - name: Run yuque_word_count.py script
+      run: |
+        python yuque_word_count.py
+      env:
+        YUQUE_COOKIE: ${{ secrets.YUQUE_COOKIE }}  # 从secrets中获取cookie
 
     - name: Commit and push changes
+      if: success()
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -am "Update README with new word count"  # 提交更改
-        git push  # 推送到GitHub
-      env:
-        COOKIE: ${{ secrets.YUQUE_COOKIE }}  # 从secrets中获取cookie
+        git commit -am "Update README with new word count" || echo "No changes to commit"
+        git push
