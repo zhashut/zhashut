@@ -29,5 +29,5 @@
 
 <p>
   <img src="https://mdn.alipayobjects.com/huamei_0prmtq/afts/img/A*sHlLTI41kIoAAAAAAAAAAAAADvuFAQ/original" style="width:35px; height:auto;vertical-align:middle;">
-  <span style="font-size:15px;">个人语雀文档输出总字数：<strong>1014416</strong></span>
+  <span style="font-size:15px;">个人语雀文档输出总字数：<strong>1013467</strong></span>
 </p>
