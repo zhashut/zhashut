@@ -20,6 +20,8 @@
 
 ![Go](https://img.shields.io/badge/-Golang-blue?&logo=Go&logoColor=fff)
 ![Java](https://img.shields.io/badge/-Java%20-orange)
+![Static Badge](https://img.shields.io/badge/Vue-%09%233CB371?style=flat)
+![Static Badge](https://img.shields.io/badge/Typescript-%233178C6?style=flat)
 ![MySQL](https://img.shields.io/badge/-MySQL-white?&logo=MySQL)
 ![Git](https://img.shields.io/badge/-Git-lightgrey)
 ![Markdown](https://img.shields.io/badge/-Markdown-black?&logo=Markdown)
