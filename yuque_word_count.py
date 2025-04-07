@@ -7,14 +7,14 @@ from pathlib import Path
 YUQUE_DOC_ID = '24381935'
 
 def get_word_count(doc_id, cookie):
-    url = f'https://www.yuque.com/api/books/{doc_id}/overview'
+    url = f'https://www.yuque.com/api/mine/editor_center'
     headers = {
         'cookie': f'cookie={cookie}'
     }
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         data = response.json()
-        return data['data']['wordCount']
+        return data['data']['word_count']
     else:
         raise Exception(f"Failed to fetch data, status code: {response.status_code}")
 
